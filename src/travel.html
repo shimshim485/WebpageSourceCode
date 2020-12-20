@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>다혜의 여행스토리</title>
+	<link rel="stylesheet" type="text/css" href="기본.css">
+	<!--flag 애니메이션 css-->
+	<style>
+		#flag p a{display:block;width:80px;height:50px;position: relative; line-height:40px;}
+		#flag p a span{position: absolute;left: 0px; top: 0px; font-size: 26px; color: black;text-shadow : 0px 0px 3px white; text-align: center;}
+		/*마우스를 올려놓을 때와 안올려놓을 때의 이미지 애니메이션*/
+		#flag p a span.pic{transition:.6s;transform:rotateX(0deg)}
+		#flag p a:hover span.pic{transition:.2s;transform:rotateX(90deg)}
+		#flag p a span.text{transition:.2s;transform:rotateX(90deg)}
+		#flag p a:hover span.text{transition:.6s;transform:rotateX(0deg)}
+	</style>
+			<script src="register.js"></script>
+</head>
+<body>
+	<div class="header"><img src="images/banner1.png" width=1450px;  alt="banner"></div>
+<div class="nav" style="float: right;">
+		<ul> 
+			<li><a href="travel_about.html">About</a></li> <li><a href="travel.html">Home</a></li> 
+		</ul>
+</div>
+<div class="aside">
+
+	<!---->
+<h3>회원정보를 등록해주세요.</h3> 
+<form> 
+	<fieldset> 
+		<!--이메일과 전화번호 입력폼을 placeholder를 사용하여 형식 지정-->
+		<legend>회원정보</legend> 
+		이메일: <input type="email" placeholder="id@host"><br> 
+		전화번호: <input type="tel"  placeholder=010-1234-5678> <br>
+		<!--register.js 파일의 register() 함수가 호출-->
+		<input type="submit" onclick="register()" value="submit">
+			<input type="reset" value="reset"> <br> 
+	</fieldset> 
+
+	<hr> <h3>검색</h3><input type="search" placeholder="검색어"> <input type="button"  placeholder="검색어" value="검색"> <br>
+</form>
+<hr>
+<div>
+	<h3>현재 시각</h3>
+	<!--현지시각을 알려주는 버튼 역시 클릭하면 time()이라는 함수 호출-->
+<input type="button" onclick="time()" value="click!"> <br><br>
+	
+</div>
+<hr>
+    <div>
+    	<!--클릭 하면 changeBodyB() 함수를 사용-->
+        <h3>옵션 : 배경 바꾸기</h3>
+        <form>
+        <button type="button" onclick="changeBodyBg('pink');">Pink</button>
+        <button type="button" onclick="changeBodyBg('paleTurquoise');">	PaleTurquoise</button>
+        <button type="button" onclick="changeBodyBg('lightSteelBlue');">LightSteelBlue</button>
+        <button type="button" onclick="changeBodyBg('khaki');">Khaki</button>
+        <button type="button" onclick="changeBodyBg('rosyBrown');">RosyBrown</button>
+        <button type="button" onclick="changeBodyBg('silver');">Silver	</button>
+        <button type="button" onclick="changeBodyBg('darkKhaki');">DarkKhaki	</button>
+
+        </form>
+    </div>
+</div>
+
+<div class="main">
+
+	<br><br><br>
+	<h2 style="text-align: center; font-size: 3rem">Choose the Country</h2><br><br>
+	<!-- 국가별 이미지와 텍스트 버튼 생성-->
+<div id="flag"style="
+		background-image: url('images/www.png'); background-repeat: no-repeat; background-position: 60% 10%; height: 800px; width: 800px;">
+		<p style="left: 250px; top: 570px"><a href="travel_Spain.html" target="_self"><span class="pic"><img src="images/spainf.png" width="80" height="50" alt="Spain" ></img></span><span class="text">SPAIN</span>
+		</a></p>
+		<p style="left: 130px; top: 220px"><a href="travel_England.html"target="_self"><span class="pic"><img src="images/ukf.png" width="80" height="50" alt="UK"></img></span><span class="text">UK</span>
+		</a></p>
+		<p style="left: 100px; top: 400px"><a href="travel_Portugal.html"target="_self"><span class="pic"><img src="images/portugalf.png" width="80" height="50" alt="Portugal"></img></span><span class="text">PORTUGAL</span>
+		</a></p>
+		<p style="left: 170px; top: 250px"><a href="travel_France.html"target="_self"><span class="pic"><img src="images/francef.png" width="80" height="50" alt="France"></img></span><span class="text" style="left: 0px; top: 0px">FRANCE</span>
+		</a></p>
+		<p style="left: 270px; top: -100px"><a href="travel_Denmark.html"target="_self"><span class="pic"><img src="images/denmarkf.png" width="80" height="50" alt="Denmark"></img></span><span class="text" style="left: 0px; top: 0px">DENMARK</span>
+		</a></p>
+		<p style="left: 430px; top: -125px"><a href="travel_Sweden.html"target="_self"><span class="pic"><img src="images/swedenf.png" width="80" height="50" alt="Sweden"></img></span><span class="text" style="left: 0px; top: 0px">SWEDEN</span>
+		</a></p>
+		<p style="left: 330px; top: 100px"><a href="travel_Croatia.html"target="_self"><span class="pic"><img src="images/croatiaf.png" width="80" height="50" alt="Croatia"></img></span><span class="text" style="left: 0px; top: 0px">CROATIA</span>
+		</a></p>
+		<p style="left: 465px; top: -80px"><a href="travel_Slovakia.html"target="_self"><span class="pic"><img src="images/slovakiaf.png" width="80" height="50" alt="Slovakia"></img></span><span class="text" style="left: 0px; top: 0px">SLOVAKIA</span>
+		</a></p>
+		<p style="left: 470px; top: -60px"><a href="travel_Hungary.html"target="_self"><span class="pic"><img src="images/hungaryf.png" width="80" height="50" alt="Hungary"></img></span><span class="text" style="left: 0px; top: 0px">HUNGARY</span>
+		</a></p>
+		<p style="left: 310px; top: -190px"><a href="travel_Austria.html"target="_self"><span class="pic"><img src="images/austriaf.png" width="80" height="50" alt="Austria"></img></span><span class="text" style="left: 0px; top: 0px">AUSTRIA</span>
+		</a></p>
+	</div>
+</div>
+<div class="footer" style="padding: 20px;margin: 20px; border-radius: 20px">
+
+<h2><각 페이지의 사용 기술과 내용></h2><br>
+<fieldset style="width: 300px;"><legend style="font-size: 20px" ><strong>Table of Contents</strong></legend>
+	<ol>
+		<li><a href="#common" > 공통 부분</a><ol>
+			<li><a href="#header">Header</a></li>
+			<li><a href="#aside">Aside</a><ul>
+				<li><a href="#regi"> 회원정보 등록</a></li>
+				<li><a href="#search"> 검색 기능</a></li>
+				<li><a href="#time"> 현재 시각</a></li>
+				<li><a href="#bgcolor"> 배경색 바꾸기</a></li>
+			</ul></li>
+			<li><a href="#nav">Nav</a></li>
+
+		</ol></li>
+		<li><a href="#main">메인 페이지</a></li>
+		<li> <a href="#about">About</a></li>
+		<li><a href="#category"> 카테고리 페이지</a></li>
+		<li><a href="#place"> Place</a><ol>
+			<li><a href="#js">place.js</a></li>
+			<li><a href="#css">place.css</a></li>
+		</ol></li>
+		<li><a href="#food"> Food</a></li>
+		<li> <a href="#movie">Movie</a></li>
+	</ol>
+</fieldset>
+<div>
+	<h3 id="common">1.공통 부분으로 들어가는 header와 aside</h4>
+	<h4 id="header">1-1.Header</h5>
+	2장<br>img태그 사용하여 header부분에는 이미지배너를 넣어 채움<br>
+	link를 사용하여 스타일시트 기본.css 불러옴<br>
+	3장<br> html 문서 구조화
+	<h4 id="aside">1-2.Aside</h4>
+	6장<br> register.js 자바스크립트 파일 사용
+	<h5 id="regi">회원정보 등록</h5>
+	3장<br> email, 전화번호 입력하여 제출버튼 클릭<br>
+	placeholder로 각 칸의 형식 지정, 힌트<br>
+	5장<br>hover, textarea태그 사용하여 폼에 마우스 올라가면 색깔 변경 
+	6장<br> register.js 파일 생성<br>
+	6장<br> onclick이벤트 리스너 속성 사용하여 자바스크립트 함수 호출
+	등록confirm이 뜨고 확인 누르면 등록되었다는 alert<br>
+	<h5 id="search">검색 기능</h5>
+	3장<br>검색 폼 생성<br>
+	placeholder로 각 칸의 형식 지정, 힌트<br>
+	<h5 id="time">현재 시각</h5>
+	3장<br> 버튼 생성<br>
+	6장<br> register.js의 time()호출<br>
+	7장<br>Date 객체 생성, now 시간 띄우기<br>
+	<h5 id="bgcolor">배경색 바꾸기</h5>
+	3장<br> 색깔 이름이 적힌 여러 버튼 생성<br>
+	4장<br> css3의 표준 색이름 사용<br>
+	6장,7장<br> onclick으로 changeBodyBg(color)호출<br>
+	<h4 id="nav">1-3.Nav</h4>
+	2장<br>하이퍼링크로 About, Home 페이지로 넘어감<br>
+	5장<br> inline-block, list 이용하여 메뉴 생성<br>
+	float:right하여 오른쪽 배치<br><br>
+</div>
+
+<div>
+	<h3 id="main">2.메인 페이지</h3>
+	2장<br>이미지 버튼 하이퍼링크 설정<br>
+	4장<br> 배경 삽입하고 다루기<br>
+	flag라는 id 셀렉터 사용<br>	
+	text에 폰트, 그림자 등 효과 설정<br>
+	이미지버튼을 relative로 배치<br>
+	pic과 text로 클래스를 나눠 셀렉터, hover를 이용해 애니메이션 사용<br>
+	5장<br>pic 클래스는 마우스 올리면 transition 0.2초, x축기준 90도 회전/ 때면 transition 0.6초, x축기준 0도 회전<br>
+	text 클래스는 마우스 올리면 transition 0.6초, x축기준 0도 회전/ 때면 transition 0.2초, x축기준 90도 회전<br><br>
+</div>
+
+<div>
+	<h3 id="about">3.About</h3>
+	2장<br>text에 여러가지 span효과 추가<br><br>
+	4장<br>margin, padding, border 고려한 사진 삽입<br>
+</div>
+
+<div>
+	<h3 id="category">4.카테고리 페이지</h3>
+	4장<br>hover기능으로 마우스 올리면 테두리생성<br>
+	border-radius로 모서리 처리<br>
+	5장<br>세가지 사진 inline-block으로 처리<br>
+</div>
+<div>
+	<h3 id="place">5.Place</h3>
+	2장<br>슬라이드 안에 넣고 싶은 이미지 나열<br>
+	스타일시트 place.css사용<br>
+	4장<br>slideshow-container 클래스로 slideshow를 담을 박스 지정<br>
+	사진 정보 text클래스로 설정<br>
+	사진을 앞뒤로 이동할수있는 prev, next클래스<br>
+	사진의 개수와 이동을 볼수있는 dot클래스<br>
+	fade 애니메이션 클래스<br>
+	6장<br>좌우 화살표 누르면 plusSlides()함수 호출<br>
+	점 누르면 currentslide()함수 동작<br>
+	<h4 id="js">5-1.place.js</h4>
+	6장<br>plusSlides(n): index값을 증가시켜 showSlides()호출<br>
+	currentSlide(n):현재슬라이드 표시<br>
+	슬라이드가 슬라이드의길이를 초과하면 1번으로 되돌아감<br>
+	슬라이드 번호가 증가할때 기존 슬라이드는 사라짐<br>
+	반복문 for 사용하여 번호가 증가할때 기존의 점효과는 사라짐<br>
+	7장<br> 두개의 Array 객체로 배열 생성
+	<h4 id="css">5-2.place.css</h4>
+	4장<br>slideshow-container: 박스 크기, 색깔, margin등 설정<br>
+	hover : 커서가 포인트로 바뀜, 배경 바뀜<br>
+	margin, padding 설정<br>
+	border-radius로 동그라미 모양<br>
+	5장<br>Slides: display:none;으로 공간 차지X<br>
+	transition 0.6초 배경<br>
+	@keyframes fade 애니메이션<br>
+</div>
+	<h3 id="food">6.Food</h3>
+	4장<br>셀렉터 이용하여 div 박스 설정<br>
+	5장<br>inline-block 사용하여 블록을 옆으로 나란히 배치<br>
+	<h3 id="movie">7.Movie</h3>
+	2장<br>li,ol을 적절히 사용해 이중리스트 생성<br>
+	각 키워드에 id를 사용해 anchor기능 적용<br>
+	5장<br>position:fixed을 이용해 우측 하단에 top기능 적용<br><br>
+
+
+
+
+</div>
+</body>
+</html>

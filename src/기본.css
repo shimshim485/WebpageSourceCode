@@ -1,0 +1,14 @@
+		.header { width:1400px; text-align: center; } 
+		.aside { width: 17%; height: 70%; float: left;}		
+		.nav{ width: 60%; height: 10%;  margin: 0 auto 0 auto; text-align: center }
+		.main{width: 60%; height: 60%; margin: 0 auto 0 auto;}
+		.footer { width: 100%; height: 20%; background-color: white;}
+
+		div > p{position: relative;}
+		body {background-color: pink;margin-left : 40px; margin-right: 40px;}
+		input:hover, textarea:hover{background : aliceblue;}
+
+		.nav ul{width: 850px;margin : 0; padding : 0;}
+		.nav ul li{list-style-type: none; display: inline; padding : 0px 15px; float: right;}
+		.nav ul li a{color: white;  text-decoration: none; }
+

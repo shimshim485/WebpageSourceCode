@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>다혜의 여행스토리</title>
+	<link rel="stylesheet" type="text/css" href="기본.css">
+	<style>
+		.main img{
+			width: 260px;
+		}
+		.main>div{
+			background-color: white;
+			border-radius: 30px;
+			text-align: center;
+			text-shadow:  0px 0px 3px skyblue;
+		}
+		.main >div> div{ 
+			display : inline-block;  margin : 10px;
+		} 
+	</style>
+	<script src="register.js"></script>
+
+</head>
+<body>
+	<div class="header"><img src="images/banner1.png" width=1450px;  alt="banner"></div>
+	<div class="nav" style=" float: right;">
+		<ul> 
+			<li><a href="travel_about.html">About</a></li> <li><a href="travel.html">Home</a></li> 
+		</ul>
+    </div>
+<div class="aside">
+<h3>회원정보를 등록해주세요.</h3> 
+<form> 
+	<fieldset> 
+		<legend>회원정보</legend> 
+		이메일: <input type="email" placeholder="id@host"><br> 
+		전화번호: <input type="tel"  placeholder=010-1234-5678> <br>
+		<input type="submit" onclick="register()" value="submit">
+			<input type="reset" value="reset"> <br> 
+	</fieldset> 
+	<hr> <h3>검색</h3><input type="search" placeholder="검색어"> <input type="button"  placeholder="검색어" value="검색"> <br>
+</form>
+<hr>
+<div>
+	<h3>현재 시각 </h3>
+<input type="button" onclick="time()" value="click!"> <br><br>
+	
+</div>
+<hr>
+    <div>
+        <h3>옵션 : 배경 바꾸기</h3>
+        <form>
+        <button type="button" onclick="changeBodyBg('pink');">Pink</button>
+        <button type="button" onclick="changeBodyBg('paleTurquoise');">	PaleTurquoise</button>
+        <button type="button" onclick="changeBodyBg('lightSteelBlue');">LightSteelBlue</button>
+        <button type="button" onclick="changeBodyBg('khaki');">Khaki</button>
+        <button type="button" onclick="changeBodyBg('rosyBrown');">RosyBrown</button>
+        <button type="button" onclick="changeBodyBg('silver');">Silver	</button>
+        <button type="button" onclick="changeBodyBg('darkKhaki');">DarkKhaki	</button>
+
+        </form>
+    </div>
+</div>
+<div class="main">
+	<br><br>
+	<h2 style="font : italic bold 40px consolas, sans-serif;">FOOD in CROATIA</h2><br>
+	<div> 
+	<h2>Nordsee</h2><br>
+	<div><img src="Austria/Food/1.jpg"></div> </div><br>
+
+	<div> 
+	<h2>카페 자허</h2><br>
+		<div><img src="Austria/Food/2.jpg"></div></div><br>
+
+	<div> 
+	<h2>Manners</h2><br>
+		<div><img src="Austria/Food/3.jpg"></div></div><br>
+	<div> 
+	<h2>Schnitzelwirt</h2><br>
+		<div><img src="Austria/Food/4.jpg"></div><div><img src="Austria/Food/5.jpg"></div></div><br>
+
+</div>
+
+</body>
+</html>

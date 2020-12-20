@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>다혜의 여행스토리</title>
+	<link rel="stylesheet" type="text/css" href="기본.css">
+	<link rel="stylesheet" type="text/css" href="place.css">
+	<style>
+
+	</style>
+	<script src="register.js"></script>
+	<script type="text/javascript" src="place.js"></script>
+	<script type="text/javascript" src="place2.js"></script>
+</head>
+<body>
+	<div class="header"><img src="images/banner1.png" width=1450px;  alt="banner"></div>
+	<div class="nav" style=" float: right;">
+		<ul> 
+			<li><a href="travel_about.html">About</a></li> <li><a href="travel.html">Home</a></li> 
+		</ul>
+    </div>
+<div class="aside">
+<h3>회원정보를 등록해주세요.</h3> 
+<form> 
+	<fieldset> 
+		<legend>회원정보</legend> 
+		이메일: <input type="email" placeholder="id@host"><br> 
+		전화번호: <input type="tel"  placeholder=010-1234-5678> <br>
+		<input type="submit" onclick="register()" value="submit">
+			<input type="reset" value="reset"> <br> 
+	</fieldset> 
+	<hr> <h3>검색</h3><input type="search" placeholder="검색어"> <input type="button"  placeholder="검색어" value="검색"> <br>
+</form>
+<hr>
+<div>
+	<h3>현재 시각 </h3>
+<input type="button" onclick="time()" value="click!"> <br><br>
+	
+</div>
+<hr>
+    <div>
+        <h3>옵션 : 배경 바꾸기</h3>
+        <form>
+        <button type="button" onclick="changeBodyBg('pink');">Pink</button>
+        <button type="button" onclick="changeBodyBg('paleTurquoise');">	PaleTurquoise</button>
+        <button type="button" onclick="changeBodyBg('lightSteelBlue');">LightSteelBlue</button>
+        <button type="button" onclick="changeBodyBg('khaki');">Khaki</button>
+        <button type="button" onclick="changeBodyBg('rosyBrown');">RosyBrown</button>
+        <button type="button" onclick="changeBodyBg('silver');">Silver	</button>
+        <button type="button" onclick="changeBodyBg('darkKhaki');">DarkKhaki	</button>
+
+        </form>
+    </div>
+</div>
+<div class="main"><br><br>
+
+<h2>Day1</h2>
+
+<div class="slideshow-container">
+
+<div class="Slides1 fade">
+  <img src="Denmark/Place/1.jpg" style="width:100%">
+  <div class="text">스톡홀름 시청</div>
+</div>
+
+<div class="Slides1 fade">
+  <img src="Denmark/Place/2.jpg" style="width:100%">
+  <div class="text">스톡홀름 시청 안</div>
+</div>
+
+<div class="Slides1 fade">
+  <img src="Denmark/Place/3.jpg" style="width:100%">
+  <div class="text">스톡홀름 도서관</div>
+</div>
+<div class="Slides1 fade">
+  <img src="Denmark/Place/4.jpg" style="width:100%">
+  <div class="text">감라스탄</div>
+</div>
+<div class="Slides1 fade">
+  <img src="Denmark/Place/5.jpg" style="width:100%">
+  <div class="text">스톡홀름 왕궁</div>
+</div>
+<div class="Slides1 fade">
+  <img src="Denmark/Place/6.jpg" style="width:100%">
+  <div class="text">스톡홀름 왕궁 안</div>
+</div>
+<div class="Slides1 fade">
+  <img src="Denmark/Place/7.jpg" style="width:100%">
+  <div class="text">노벨 박물관 앞</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot1" onclick="currentSlide(1)"></span> 
+  <span class="dot1" onclick="currentSlide(2)"></span> 
+  <span class="dot1" onclick="currentSlide(3)"></span> 
+  <span class="dot1" onclick="currentSlide(4)"></span> 
+  <span class="dot1" onclick="currentSlide(5)"></span> 
+  <span class="dot1" onclick="currentSlide(6)"></span> 
+  <span class="dot1" onclick="currentSlide(7)"></span> 
+</div>
+<br><br><br><br><br><br>
+
+
+<h2>Day2</h2>
+<div class="slideshow-container">
+<div class="Slides2">
+  <img src="Denmark/Place/8.jpg" style="width:100%">
+  <div class="text">Vette-Katten</div>
+</div>
+
+<div class="Slides2 fade">
+  <img src="Denmark/Place/9.jpg" style="width:100%">
+  <div class="text">Vette-Katter 안</div>
+</div>
+
+<div class="Slides2 fade">
+  <img src="Denmark/Place/10.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="Slides2 fade">
+  <img src="Denmark/Place/11.jpg" style="width:100%">
+  <div class="text">번화가/중심가</div>
+</div>
+
+<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot2" onclick="currentSlide2(1)"></span> 
+  <span class="dot2" onclick="currentSlide2(2)"></span> 
+  <span class="dot2" onclick="currentSlide2(3)"></span> 
+  <span class="dot2" onclick="currentSlide2(4)"></span> 
+</div>
+</div>
+
+</body>
+</html>

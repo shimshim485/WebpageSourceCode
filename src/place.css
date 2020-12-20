@@ -1,0 +1,129 @@
+* {box-sizing: border-box}
+
+/*각 클래스에서의 디스플레이 설정과 이미지 크기 설정*/
+.Slides1 {display: none;}
+.Slides1 img {vertical-align: middle;height: 500px;}
+.Slides2 {display: none; }
+.Slides2 img {vertical-align: middle;height: 500px;}
+.Slides3 {display: none; }
+.Slides3 img {vertical-align: middle;height: 500px;}
+.Slides4 {display: none; }
+.Slides4 img {vertical-align: middle;height: 500px;}
+.Slides5 {display: none; }
+.Slides5 img {vertical-align: middle;height: 500px;}
+
+/*slideshow를 담을 박스 설정*/
+.slideshow-container {
+  background-color: lightpink;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+}
+
+.main h2{
+  text-align: center;
+}
+
+/*좌우 화살표 클래스의 버튼 설정*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*화살표 위에 마우스를 올려 놓았을 때 바뀌는 배경 색*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/*사진 아래 정보를 위한 칸 설정*/
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+/*사진아래 점 설정, 모양, 디스플레이, 변화 시간 등 설정*/
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot5 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>다혜의 여행스토리</title>
+	<link rel="stylesheet" type="text/css" href="기본.css">
+	<link rel="stylesheet" type="text/css" href="place.css">
+	<style>
+
+	</style>
+	<script src="register.js"></script>
+	<script type="text/javascript" src="place.js"></script>
+  <script type="text/javascript" src="place2.js"></script>
+  <script type="text/javascript" src="place3.js"></script>
+  <script type="text/javascript" src="place4.js"></script>
+  <script type="text/javascript" src="place5.js"></script>
+</head>
+<body>
+	<div class="header"><img src="images/banner1.png" width=1450px;  alt="banner"></div>
+	<div class="nav" style=" float: right;">
+		<ul> 
+			<li><a href="travel_about.html">About</a></li> <li><a href="travel.html">Home</a></li> 
+		</ul>
+    </div>
+<div class="aside">
+<h3>회원정보를 등록해주세요.</h3> 
+<form> 
+	<fieldset> 
+		<legend>회원정보</legend> 
+		이메일: <input type="email" placeholder="id@host"><br> 
+		전화번호: <input type="tel"  placeholder=010-1234-5678> <br>
+		<input type="submit" onclick="register()" value="submit">
+			<input type="reset" value="reset"> <br> 
+	</fieldset> 
+	<hr> <h3>검색</h3><input type="search" placeholder="검색어"> <input type="button"  placeholder="검색어" value="검색"> <br>
+</form>
+<hr>
+<div>
+	<h3>현재 시각 </h3>
+<input type="button" onclick="time()" value="click!"> <br><br>
+	
+</div>
+<hr>
+    <div>
+        <h3>옵션 : 배경 바꾸기</h3>
+        <form>
+        <button type="button" onclick="changeBodyBg('pink');">Pink</button>
+        <button type="button" onclick="changeBodyBg('paleTurquoise');">	PaleTurquoise</button>
+        <button type="button" onclick="changeBodyBg('lightSteelBlue');">LightSteelBlue</button>
+        <button type="button" onclick="changeBodyBg('khaki');">Khaki</button>
+        <button type="button" onclick="changeBodyBg('rosyBrown');">RosyBrown</button>
+        <button type="button" onclick="changeBodyBg('silver');">Silver	</button>
+        <button type="button" onclick="changeBodyBg('darkKhaki');">DarkKhaki	</button>
+
+        </form>
+    </div>
+</div>
+<div class="main"><br><br>
+
+<h2>Day1</h2>
+
+<div class="slideshow-container">
+
+<div class="Slides1 fade">
+  <img src="England/Place/1.jpg" style="width:100%">
+  <div class="text">해리포터 스튜디오1</div>
+</div>
+
+<div class="Slides1 fade">
+  <img src="England/Place/2.jpg" style="width:100%">
+  <div class="text">해리포터 스튜디오2</div>
+</div>
+
+<div class="Slides1 fade">
+  <img src="England/Place/7.jpg" style="width:100%">
+  <div class="text">해리포터 스튜디오3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot1" onclick="currentSlide(1)"></span> 
+  <span class="dot1" onclick="currentSlide(2)"></span> 
+  <span class="dot1" onclick="currentSlide(3)"></span> 
+</div>
+<br><br><br><br><br><br>
+
+
+<h2>Day2</h2>
+<div class="slideshow-container">
+<div class="Slides2">
+  <img src="England/Place/3.jpg" style="width:100%">
+  <div class="text">m&m store</div>
+</div>
+
+<div class="Slides2 fade">
+  <img src="England/Place/4.jpg" style="width:100%">
+  <div class="text">소호거리</div>
+</div>
+
+<div class="Slides2 fade">
+  <img src="England/Place/5.jpg" style="width:100%">
+  <div class="text">Winter Wonderland1</div>
+</div>
+<div class="Slides2 fade">
+  <img src="England/Place/6.jpg" style="width:100%">
+  <div class="text">Winter Wonderland2</div>
+</div>
+<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot2" onclick="currentSlide2(1)"></span> 
+  <span class="dot2" onclick="currentSlide2(2)"></span> 
+  <span class="dot2" onclick="currentSlide2(3)"></span> 
+  <span class="dot2" onclick="currentSlide2(4)"></span> 
+</div>
+<br><br><br><br><br><br>
+
+
+<h2>Day3</h2>
+<div class="slideshow-container">
+<div class="Slides3 fade">
+    <img src="England/Place/21.jpg" style="width:100%">
+  <div class="text">포토벨로 마켓 </div>
+</div>
+<div class="Slides3 fade">
+  <img src="England/Place/8.jpg" style="width:100%">
+  <div class="text">노팅힐 서점 </div>
+</div>
+
+<div class="Slides3 fade">
+  <img src="England/Place/9.jpg" style="width:100%">
+  <div class="text">다운트 북스</div>
+</div>
+<div class="Slides3 fade">
+  <img src="England/Place/10.jpg" style="width:100%">
+  <div class="text">런던 리뷰 북샵</div>
+</div>
+<div class="Slides3 fade">
+  <img src="England/Place/11.jpg" style="width:100%">
+  <div class="text">트라칼가 광장</div>
+</div>
+<div class="Slides3 fade">
+  <img src="England/Place/12.jpg" style="width:100%">
+  <div class="text">카나비 스트리트1</div>
+</div>
+<div class="Slides3 fade">
+  <img src="England/Place/13.jpg" style="width:100%">
+  <div class="text">카나비 스트리트2</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot3" onclick="currentSlide3(1)"></span> 
+  <span class="dot3" onclick="currentSlide3(2)"></span> 
+  <span class="dot3" onclick="currentSlide3(3)"></span> 
+  <span class="dot3" onclick="currentSlide3(4)"></span> 
+  <span class="dot3" onclick="currentSlide3(5)"></span> 
+  <span class="dot3" onclick="currentSlide3(6)"></span> 
+  <span class="dot3" onclick="currentSlide3(7)"></span> 
+</div>
+<br><br><br><br><br><br>
+
+
+<h2>Day4</h2>
+<div class="slideshow-container">
+<div class="Slides4">
+  <img src="England/Place/14.jpg" style="width:100%">
+  <div class="text">윔블던 테니스 박물관1 </div>
+</div>
+
+<div class="Slides4 fade">
+  <img src="England/Place/15.jpg" style="width:100%">
+  <div class="text">윔블던 테니스 박물관2</div>
+</div>
+<div class="Slides4 fade">
+  <img src="England/Place/16.jpg" style="width:100%">
+  <div class="text">윔블던 테니스 박물관3</div>
+</div>
+<div class="Slides4 fade">
+  <img src="England/Place/17.jpg" style="width:100%">
+  <div class="text">윔블던 테니스 박물관4</div>
+</div>
+
+<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot4" onclick="currentSlide4(1)"></span> 
+  <span class="dot4" onclick="currentSlide4(2)"></span> 
+  <span class="dot4" onclick="currentSlide4(3)"></span> 
+  <span class="dot4" onclick="currentSlide4(4)"></span> 
+</div>
+<br><br><br><br><br><br>
+
+
+<h2>Day5</h2>
+<div class="slideshow-container">
+  <div class="Slides5">
+  <img src="England/Place/18.jpg" style="width:100%">
+  <div class="text">Esher1 </div>
+</div>
+
+<div class="Slides5">
+  <img src="England/Place/19.jpg" style="width:100%">
+  <div class="text">Esher2 </div>
+</div>
+
+<div class="Slides5 fade">
+  <img src="England/Place/20.jpg" style="width:100%">
+  <div class="text">Esher3</div>
+</div>
+<div class="Slides5 fade">
+  <img src="England/Place/22.jpg" style="width:100%">
+  <div class="text">대영박물관1</div>
+</div>
+<div class="Slides5 fade">
+  <img src="England/Place/23.jpg" style="width:100%">
+  <div class="text">대영박물관2</div>
+</div>
+
+<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot5" onclick="currentSlide5(1)"></span> 
+  <span class="dot5" onclick="currentSlide5(2)"></span> 
+  <span class="dot5" onclick="currentSlide5(3)"></span> 
+  <span class="dot5" onclick="currentSlide5(4)"></span> 
+  <span class="dot5" onclick="currentSlide5(5)"></span> 
+</div>
+
+</div>
+
+</body>
+</html>
